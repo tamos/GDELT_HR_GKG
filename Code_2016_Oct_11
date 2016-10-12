@@ -118,9 +118,6 @@ tone_data_flat <- separate(data = ICC[,c("gkgrecordid", "tone")],col = "tone", i
 write_delim(tone_data_flat, path = str_c(getwd(), "/", dataname, "tone_data_flat.txt"), delim = "\t", na = "NA", col_names = TRUE)
 rm(tone_data_flat)
 
-#split out CAM
-
-
 
 #split out enhanced dates
 flat_named <- c("flat_enhanceddate_resolution", "flat_enhanceddate_month", "flat_enhanceddate_day", "flat_enhanceddate_year", "flat_enhanceddate_offset")
